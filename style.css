@@ -1,0 +1,78 @@
+/* Borders for the examples */
+div.lesson {
+    border:3px solid gray;
+    padding:.5em;
+    margin-bottom:1em;
+}
+/* Borders for the examples */
+div.example {
+    border:1px solid lightgray;
+    padding:.5em;
+    margin-bottom:1em;
+}
+/* Applies to all elements that have the class flex-container */
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  /*flex-wrap: wrap;*/
+  /*flex-wrap: wrap-reverse;*/
+  /*flex-direction:row;*/
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  line-height: 75px;
+  width: 100px;  
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-container {
+  /* This treats its like a block element <div> */
+  display: grid;
+  /* This treats its like a inline element <span> */
+  /*display: inline-grid;*/
+  grid-template-columns: auto auto auto;
+  /*grid-column-gap: 50px;
+  grid-row-gap: 50px;*/
+  /* this one does the same as the two above it with coluumns and rows*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+/*.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}*/
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.item2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.item4 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.item8 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
